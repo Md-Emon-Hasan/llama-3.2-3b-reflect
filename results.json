@@ -1,0 +1,400 @@
+{
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "sft_dataset": "ServiceNow-AI/R1-Distill-SFT:v0",
+  "eval": {
+    "benchmark": "GSM8K test",
+    "n": 100,
+    "decoding": "greedy",
+    "base": {
+      "accuracy": 75.0,
+      "mean_words": 180.3,
+      "median_words": 161,
+      "reflective_markers_per_answer": 0.03,
+      "answers_with_any_marker_pct": 3.0
+    },
+    "tuned": {
+      "accuracy": 65.0,
+      "mean_words": 386.6,
+      "median_words": 387,
+      "reflective_markers_per_answer": 0.03,
+      "answers_with_any_marker_pct": 2.0
+    },
+    "delta_accuracy": -10.0,
+    "per_problem": {
+      "both": 59,
+      "fixed": 6,
+      "broke": 16,
+      "neither": 19
+    }
+  },
+  "loss_curve": [
+    [
+      5,
+      0.6031797409057618
+    ],
+    [
+      10,
+      0.5751004219055176
+    ],
+    [
+      15,
+      0.4631198883056641
+    ],
+    [
+      20,
+      0.4972533702850342
+    ],
+    [
+      25,
+      0.5046830654144288
+    ],
+    [
+      30,
+      0.43886876106262207
+    ],
+    [
+      35,
+      0.44311232566833497
+    ],
+    [
+      40,
+      0.4090470314025879
+    ],
+    [
+      45,
+      0.3957359790802002
+    ],
+    [
+      50,
+      0.39405710697174073
+    ],
+    [
+      55,
+      0.33793015480041505
+    ],
+    [
+      60,
+      0.3737001419067383
+    ],
+    [
+      65,
+      0.34989233016967775
+    ],
+    [
+      70,
+      0.3755160093307495
+    ],
+    [
+      75,
+      0.3752471923828125
+    ],
+    [
+      80,
+      0.3530725002288818
+    ],
+    [
+      85,
+      0.3805647850036621
+    ],
+    [
+      90,
+      0.3938462257385254
+    ],
+    [
+      95,
+      0.37998502254486083
+    ],
+    [
+      100,
+      0.35205485820770266
+    ],
+    [
+      105,
+      0.3708599090576172
+    ],
+    [
+      110,
+      0.3568729877471924
+    ],
+    [
+      115,
+      0.3708590269088745
+    ],
+    [
+      120,
+      0.39458842277526857
+    ],
+    [
+      125,
+      0.3410849332809448
+    ],
+    [
+      130,
+      0.3214355707168579
+    ],
+    [
+      135,
+      0.41930179595947265
+    ],
+    [
+      140,
+      0.3436356782913208
+    ],
+    [
+      145,
+      0.4262721538543701
+    ],
+    [
+      150,
+      0.3737560033798218
+    ],
+    [
+      155,
+      0.3509130716323853
+    ],
+    [
+      160,
+      0.35071792602539065
+    ],
+    [
+      165,
+      0.3865889310836792
+    ],
+    [
+      170,
+      0.39638099670410154
+    ],
+    [
+      175,
+      0.33083276748657225
+    ],
+    [
+      180,
+      0.31978230476379393
+    ],
+    [
+      185,
+      0.3774104118347168
+    ],
+    [
+      190,
+      0.39302496910095214
+    ],
+    [
+      195,
+      0.3193991661071777
+    ],
+    [
+      200,
+      0.41407365798950196
+    ],
+    [
+      205,
+      0.39426450729370116
+    ],
+    [
+      210,
+      0.34723126888275146
+    ],
+    [
+      215,
+      0.3382970571517944
+    ],
+    [
+      220,
+      0.37050864696502683
+    ],
+    [
+      225,
+      0.40112690925598143
+    ],
+    [
+      230,
+      0.37369847297668457
+    ],
+    [
+      235,
+      0.3673372983932495
+    ],
+    [
+      240,
+      0.43816571235656737
+    ],
+    [
+      245,
+      0.29952526092529297
+    ],
+    [
+      250,
+      0.3561333417892456
+    ],
+    [
+      255,
+      0.39733076095581055
+    ],
+    [
+      260,
+      0.3378442764282227
+    ],
+    [
+      265,
+      0.3536123514175415
+    ],
+    [
+      270,
+      0.35389807224273684
+    ],
+    [
+      275,
+      0.3485655069351196
+    ],
+    [
+      280,
+      0.35933823585510255
+    ],
+    [
+      285,
+      0.3548250198364258
+    ],
+    [
+      290,
+      0.3619748592376709
+    ],
+    [
+      295,
+      0.3398918867111206
+    ],
+    [
+      300,
+      0.3147099256515503
+    ],
+    [
+      305,
+      0.38246331214904783
+    ],
+    [
+      310,
+      0.39694297313690186
+    ],
+    [
+      315,
+      0.31678974628448486
+    ],
+    [
+      320,
+      0.3876387119293213
+    ],
+    [
+      325,
+      0.3414973258972168
+    ],
+    [
+      330,
+      0.29627141952514646
+    ],
+    [
+      335,
+      0.3550447940826416
+    ],
+    [
+      340,
+      0.3126283884048462
+    ],
+    [
+      345,
+      0.35566034317016604
+    ],
+    [
+      350,
+      0.3089282751083374
+    ],
+    [
+      355,
+      0.3716308355331421
+    ],
+    [
+      360,
+      0.3350650787353516
+    ],
+    [
+      365,
+      0.3438723564147949
+    ],
+    [
+      370,
+      0.3309534311294556
+    ],
+    [
+      375,
+      0.3178165197372437
+    ],
+    [
+      380,
+      0.33165555000305175
+    ],
+    [
+      385,
+      0.3551639080047607
+    ],
+    [
+      390,
+      0.33267476558685305
+    ],
+    [
+      395,
+      0.33241302967071534
+    ],
+    [
+      400,
+      0.3646083354949951
+    ]
+  ],
+  "examples": [
+    {
+      "question": "Tara bought 8 packs of 5 canvas bags for $4 each. She painted them and sold them at a craft fair for $8 each. How much profit did she earn on her bags?",
+      "gold": "160",
+      "base": "To find the profit earned by Tara, we need to calculate the total cost of the bags and the total revenue from selling them.\n\nStep 1: Calculate the total cost of the bags\nTara bought 8 packs of 5 canvas bags, so the total number of bags is 8 * 5 = 40 bags.\nThe cost of each bag is $4, so the total cost is 40 * $4 = $160.\n\nStep 2: Calculate the total revenue from selling the bags\nTara sold each bag for $8, and she sold 40 bags, so the total revenue is 40 * $8 = $320.\n\nStep 3: Calculate the profit\nProfit is calculated by subtracting the total cost from the total revenue.\nProfit = Total Revenue - Total Cost\nProfit = $320 - $160\nProfit = $160\n\nTherefore, Tara earned a profit of $160 on her canvas bags.",
+      "tuned": "<think>\nFirst, I need to determine the total cost of the canvas bags. Tara bought 8 packs of 5 bags each, so the total number of bags is 8 multiplied by 5, which equals 40 bags. Each bag costs $4, so the total cost is 40 bags multiplied by $4 per bag, resulting in $160.\n\nNext, I'll calculate the total revenue from selling the bags. Tara sold each bag for $8, and she sold 40 bags, so the total revenue is 40 bags multiplied by $8 per bag, which equals $320.\n\nFinally, to find the profit, I'll subtract the total cost from the total revenue. Subtracting $160 from $320 gives me a profit of $160.\n</think>\n\nTo determine the profit Tara earned from selling her canvas bags, let's break down the problem step by step.\n\n### **Step 1: Calculate the Total Cost**\n\nTara bought **8 packs** of **5 canvas bags** each. \n\n\\[\n\\text{Total number of bags} = 8 \\times 5 = 40 \\text{ bags}\n\\]\n\nEach bag costs \\$4.\n\n\\[\n\\text{Total cost} = 40 \\text{ bags} \\times \\$4/\\text{bag} = \\$160\n\\]\n\n### **Step 2: Calculate the Total Revenue**\n\nTara sold each bag for \\$8.\n\n\\[\n\\text{Total revenue} = 40 \\text{ bags} \\times \\$8/\\text{bag} = \\$320\n\\]\n\n### **Step 3: Determine the Profit**\n\nProfit is calculated by subtracting the total cost from the total revenue.\n\n\\[\n\\text{Profit} = \\text{Total revenue} - \\text{Total cost} = \\$320 - \\$160 = \\$160\n\\]\n\n### **Final Answer**\n\nTara earned a profit of \\(\\boxed{\\$160}\\) from selling her canvas bags.\n\nFirst, let's calculate the total cost of the canvas bags. Tara bought 8 packs of 5 bags each, so the total number of bags is 8 * 5 = 40 bags. Each bag costs $4, so the total cost is 40 bags * $4/bag = $160.\n\nNext, let's calculate the total revenue from selling the bags. Tara sold each bag for $8, and she sold 40 bags, so the total revenue is 40 bags * $8/bag = $320.\n\nNow, to find the profit, we subtract the total cost from the total revenue: $320 - $160 = $160.\n\nTara earned a profit of $\\boxed{\\$160}$  from selling her bags.",
+      "base_ok": true,
+      "tuned_ok": true
+    },
+    {
+      "question": "Mary is making ice cubes with fruit frozen in them for a cocktail party. She makes some strawberry cubes, and a number of blueberry cubes equal to 5 times the number of strawberry cubes minus 4. If she makes 116 ice cubes total, how many blueberry cubes does she make?",
+      "gold": "96",
+      "base": "To solve this problem, let's break it down step by step.\n\nLet's denote the number of strawberry cubes as S and the number of blueberry cubes as B.\n\nWe know that the number of blueberry cubes is equal to 5 times the number of strawberry cubes minus 4. We can write this as:\n\nB = 5S - 4\n\nWe also know that the total number of ice cubes is 116, which is the sum of strawberry cubes and blueberry cubes. We can write this as:\n\nS + B = 116\n\nNow, we can substitute the expression for B from the first equation into the second equation:\n\nS + (5S - 4) = 116\n\nCombine like terms:\n\n6S - 4 = 116\n\nAdd 4 to both sides:\n\n6S = 120\n\nDivide both sides by 6:\n\nS = 20\n\nNow that we know the number of strawberry cubes, we can find the number of blueberry cubes by substituting S into the first equation:\n\nB = 5S - 4\nB = 5(20) - 4\nB = 100 - 4\nB = 96\n\nTherefore, Mary makes 96 blueberry cubes.",
+      "tuned": "<think>\nFirst, I need to determine the number of strawberry cubes Mary makes. Let's denote this number as \\( S \\).\n\nNext, I'll calculate the number of blueberry cubes. According to the problem, the number of blueberry cubes is 5 times the number of strawberry cubes minus 4. So, the number of blueberry cubes can be expressed as \\( 5S - 4 \\).\n\nThe total number of ice cubes Mary makes is the sum of strawberry and blueberry cubes, which is given as 116. Therefore, I can set up the equation:\n\\[\nS + (5S - 4) = 116\n\\]\n\nCombining like terms, the equation simplifies to:\n\\[\n6S - 4 = 116\n\\]\n\nAdding 4 to both sides of the equation:\n\\[\n6S = 120\n\\]\n\nFinally, dividing both sides by 6 to solve for \\( S \\):\n\\[\nS = 20\n\\]\n\nNow that I know Mary makes 20 strawberry cubes, I can find the number of blueberry cubes by substituting \\( S = 20 \\) into the expression \\( 5S - 4 \\):\n\\[\n5 \\times 20 - 4 = 100 - 4 = 96\n\\]\n\nTherefore, Mary makes 96 blueberry cubes.\n</think>\n\nLet's solve the problem step by step.\n\n**Given:**\n- Let \\( S \\) be the number of strawberry cubes.\n- The number of blueberry cubes is \\( 5S - 4 \\).\n- The total number of ice cubes is 116.\n\n**Step 1: Set Up the Equation**\n\nThe total number of ice cubes is the sum of strawberry and blueberry cubes:\n\\[\nS + (5S - 4) = 116\n\\]\n\n**Step 2: Combine Like Terms**\n\n\\[\n6S - 4 = 116\n\\]\n\n**Step 3: Solve for \\( S \\)**\n\nAdd 4 to both sides:\n\\[\n6S = 120\n\\]\n\nDivide both sides by 6:\n\\[\nS = 20\n\\]\n\n**Step 4: Find the Number of Blueberry Cubes**\n\nSubstitute \\( S = 20 \\) into the expression for blueberry cubes:\n\\[\n5 \\times 20 - 4 = 100 - 4 = 96\n\\]\n\n**Final Answer:**\n\\[\n\\boxed{96}\n\\]\n\nLet's denote the number of strawberry cubes as S. According to the problem, the number of blueberry cubes is 5 times the number of strawberry cubes minus 4. So, the number of blueberry cubes can be expressed as 5S - 4.\n\nThe total number of ice cubes Mary makes is the sum of strawberry and blueberry cubes, which is given as 116. Therefore, we can set up the equation:\n\nS + (5S - 4) = 116\n\nNow, let's solve for S:\n\nS + 5S - 4 = 116\n6S - 4 = 116\n6S = 116 + 4\n6S = 120\nS = 120 / 6\nS = 20\n\nNow that we know Mary makes 20 strawberry cubes, we can find the number of blueberry cubes by substituting S = 20 into the expression for blueberry cubes:\n\nNumber of blueberry cubes = 5S - 4\nNumber of blueberry cubes = 5 * 20 - 4\nNumber of blueberry cubes = 100 - 4\nNumber of blueberry cubes = 96\n\nTherefore, Mary makes $\\boxed{96}$  blueberry cubes.",
+      "base_ok": true,
+      "tuned_ok": true
+    },
+    {
+      "question": "Britany records 18 4-minute TikTok videos each week. She spends 2 hours a week writing amateur songs to sing on TikTok, and 15 minutes six days a week doing her makeup before filming herself for TikTok. How much time does Britany spend on TikTok in a month with four weeks?",
+      "gold": "1128",
+      "base": "To find the total time Britany spends on TikTok in a month, we need to calculate the time spent on each activity and then add them up.\n\n1. Time spent on recording TikTok videos:\nBritany records 18 videos per week. Since there are 4 weeks in a month, she records 18 * 4 = 72 videos in a month.\n\nEach video is 4 minutes long, so the total time spent recording videos is 72 * 4 = 288 minutes.\n\n2. Time spent writing amateur songs:\nBritany spends 2 hours per week writing songs. Since there are 4 weeks in a month, she spends 2 * 4 = 8 hours in a month.\n\nTo convert hours to minutes, we multiply by 60 (since there are 60 minutes in an hour):\n8 * 60 = 480 minutes\n\n3. Time spent doing makeup:\nBritany spends 15 minutes per day, six days a week, doing her makeup. Since there are 4 weeks in a month, she spends 15 * 6 * 4 = 360 minutes in a month.\n\nNow, let's add up the time spent on each activity:\n288 minutes (recording videos) + 480 minutes (writing songs) + 360 minutes (doing makeup) = 1128 minutes\n\nTo convert the total time to hours, we divide by 60:\n1128 / 60 = 18.8 hours\n\nTherefore, Britany spends approximately 18.8 hours per month on TikTok.",
+      "tuned": "<think>\nFirst, I need to determine the total time Britany spends on TikTok each week. She records 18 videos, each taking 4 minutes, so the total recording time is 18 multiplied by 4, which equals 72 minutes.\n\nNext, she spends 2 hours, or 120 minutes, writing songs each week. Adding this to the recording time gives a total of 192 minutes per week.\n\nBritany also spends 15 minutes, six days a week, doing her makeup. Since there are four weeks in a month, she spends 15 multiplied by 6, which equals 90 minutes, over the month.\n\nFinally, to find the total time spent on TikTok in a month, I add the weekly recording and songwriting time to the weekly makeup time, resulting in 192 plus 90, which equals 282 minutes.\n</think>\n\nTo determine how much time Britany spends on TikTok in a month, let's break down her activities and calculate the total time spent each week and then multiply by the number of weeks in a month.\n\n### **Step 1: Calculate Time Spent Recording Videos Each Week**\n\n- **Number of videos recorded each week:** 18\n- **Time per video:** 4 minutes\n- **Total recording time per week:** \n  \\[\n  18 \\text{ videos} \\times 4 \\text{ minutes/video} = 72 \\text{ minutes}\n  \\]\n\n### **Step 2: Calculate Time Spent Writing Songs Each Week**\n\n- **Time spent writing songs each week:** 2 hours\n- **Convert hours to minutes:** \n  \\[\n  2 \\text{ hours} \\times 60 \\text{ minutes/hour} = 120 \\text{ minutes}\n  \\]\n- **Total songwriting time per week:** \n  \\[\n  120 \\text{ minutes} + 72 \\text{ minutes} = 192 \\text{ minutes}\n  \\]\n\n### **Step 3: Calculate Time Spent Doing Makeup Each Week**\n\n- **Time spent doing makeup each day:** 15 minutes\n- **Number of days with makeup:** 6 days\n- **Total makeup time per week:** \n  \\[\n  15 \\text{ minutes/day} \\times 6 \\text{ days} = 90 \\text{ minutes}\n  \\]\n\n### **Step 4: Calculate Total Time Spent on TikTok Each Week**\n\n- **Total time spent on TikTok each week:** \n  \\[\n  192 \\text{ minutes (songwriting)} + 90 \\text{ minutes (makeup)} = 282 \\text{ minutes}\n  \\]\n\n### **Step 5: Calculate Total Time Spent on TikTok in a Month**\n\n- **Number of weeks in a month:** 4 weeks\n- **Total time spent on TikTok in a month:** \n  \\[\n  282 \\text{ minutes/week} \\times 4 \\text{ weeks} = 1128 \\text{ minutes}\n  \\]\n\n### **Final Answer**\n\nBritany spends a total of \\(\\boxed{1128}\\) minutes on TikTok in a month.\n\nTo find out how much time Britany spends on TikTok in a month, we need to calculate the total time she spends on TikTok each week and then multiply that by the number of weeks in a month.\n\nFirst, let's calculate the time she spends on TikTok each week:\n\n- She records 18 videos each week, and each video takes 4 minutes to record. So, the total time she spends recording videos each week is:\n  \\[\n  18 \\text{ videos} \\times 4 \\text{ minutes/video}",
+      "base_ok": false,
+      "tuned_ok": false
+    }
+  ],
+  "config": {
+    "method": "LoRA 16-bit via Unsloth",
+    "r": 16,
+    "lora_alpha": 16,
+    "lora_dropout": 0,
+    "max_seq": 2048,
+    "batch": 1,
+    "accum": 8,
+    "steps": 400,
+    "lr": 0.0002,
+    "optim": "adamw_8bit",
+    "trainable_params": 24313856,
+    "total_params": 3212749824,
+    "train_examples_seen": 3200,
+    "peak_vram_gb": 7.77,
+    "train_minutes": 76.3,
+    "hardware": "Tesla T4",
+    "seed": 3407,
+    "adapter_mb": 97.3,
+    "merged_gb": 6.44,
+    "gguf_built": true
+  }
+}
